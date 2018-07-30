@@ -11,15 +11,33 @@
 .userColumn {
 	background-color: #1c2128;
 	border: 2px solid black;
-	padding-top: 30%;
-	padding-bottom: 60%;
+	padding-top: 20%;
+	padding-bottom: 20%;
 	text-align: center;
 }
 
 .simonColumn {
 	background-color: #1c2128;
 	border: 2px solid black;
-	padding-top: 30%;
-	padding-bottom: 60%;
+	padding-top: 20%;
+	padding-bottom: 20%;
 	text-align: center;
+}
+
+.userDiv {
+	padding: 25px;
+	background-color: #29559b;
+	color: white;
+	border: 2px solid black;
+	text-align: center;
+	font-size: 28px;
+}
+
+.simonDiv {
+	padding: 25px;
+	background-color: #29559b;
+	color: white;
+	border: 2px solid black;
+	text-align: center;
+	font-size: 28px;
 }

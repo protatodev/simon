@@ -21,13 +21,25 @@
 
       <div class="col-sm-6">
         <h2>Your Guess</h2>
+        <div class="userDiv">
+          Select Color
+        </div>
         <div class="userColumn">
-          <img src="simon.png" id="userSimon">
+          <img src="simon.png" usemap="#image-map" class="map">
+          <map name="image-map">
+           <area target="" title="" coords="20,186,110,187,138,134,183,111,182,23,105,48,46,105" shape="poly" class="green">
+           <area target="" title="" coords="110,218,136,264,183,289,184,380,129,366,78,333,34,274,22,215" shape="poly" class="yellow">
+           <area target="" title="" coords="216,291,217,381,330,329,379,220,290,219" shape="poly" class="blue">
+           <area target="" title="" coords="380,186,293,185,216,110,216,23,330,74" shape="poly" class="red">
+          </map>
         </div>
       </div>
 
       <div class="col-sm-6">
         <h2>Simon</h2>
+        <div class="simonDiv">
+          Simon Picks...
+        </div>
         <div class="simonColumn">
           <img src="simon.png" id="userSimon">
         </div>
