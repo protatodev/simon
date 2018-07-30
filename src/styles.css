@@ -1,0 +1,25 @@
+.col-sm-6 h2 {
+	text-align: center;
+	border: 2px solid black;
+	background-color: lightgreen;
+}
+
+.jumbotron {
+	text-align: center;
+}
+
+.userColumn {
+	background-color: #1c2128;
+	border: 2px solid black;
+	padding-top: 30%;
+	padding-bottom: 60%;
+	text-align: center;
+}
+
+.simonColumn {
+	background-color: #1c2128;
+	border: 2px solid black;
+	padding-top: 30%;
+	padding-bottom: 60%;
+	text-align: center;
+}
