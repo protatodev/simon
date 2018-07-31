@@ -6,7 +6,6 @@
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
-  <script type="text/javascript" src="bundle.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <title>Simon JS</title>
 </head>
@@ -18,34 +17,50 @@
           <h1>Welcome Simon JS</h1>
         </div>
       </div>
-
-      <div class="col-sm-6">
-        <h2>Your Guess</h2>
-        <div class="userDiv">
-          Select Color
-        </div>
-        <div class="userColumn">
-          <img src="simon.png" usemap="#image-map" class="map">
-          <map name="image-map">
-           <area target="" title="" coords="20,186,110,187,138,134,183,111,182,23,105,48,46,105" shape="poly" class="green">
-           <area target="" title="" coords="110,218,136,264,183,289,184,380,129,366,78,333,34,274,22,215" shape="poly" class="yellow">
-           <area target="" title="" coords="216,291,217,381,330,329,379,220,290,219" shape="poly" class="blue">
-           <area target="" title="" coords="380,186,293,185,216,110,216,23,330,74" shape="poly" class="red">
-          </map>
-        </div>
-      </div>
-
-      <div class="col-sm-6">
-        <h2>Simon</h2>
-        <div class="simonDiv">
-          Simon Picks...
-        </div>
-        <div class="simonColumn">
-          <img src="simon.png" id="userSimon">
-        </div>
-      </div>
-
     </div>
+
+      <div class="row">
+        <div class="col-sm menu">
+          <hr>
+          <button class="btn btn-success" id="playGame">Play Game</button>
+          <button class="btn btn-primary" id="restartGame">Restart</button>
+          <hr>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm userSection">
+          <h2>Your Guess</h2>
+          <div class="userDiv">
+            Select Color
+          </div>
+          <div class="userColumn">
+            <img src="simon.png" usemap="#image-map" class="map">
+            <map name="image-map">
+             <area target="" title="" coords="20,186,110,187,138,134,183,111,182,23,105,48,46,105" shape="poly" class="color" value="green">
+             <area target="" title="" coords="110,218,136,264,183,289,184,380,129,366,78,333,34,274,22,215" shape="poly" class="color" value="yellow">
+             <area target="" title="" coords="216,291,217,381,330,329,379,220,290,219" shape="poly" class="color" value="blue">
+             <area target="" title="" coords="380,186,293,185,216,110,216,23,330,74" shape="poly" class="color" value="red">
+            </map>
+          </div>
+        </div>
+
+        <div class="col-sm simonSection">
+          <h2>Simon</h2>
+          <div class="simonDiv">
+            Simon Picks...
+          </div>
+          <div class="simonColumn">
+            <img src="simon.png" id="userSimon">
+          </div>
+        </div>
+      </div>
+
+      <div class="gameOver">
+        <h1>You Lose</h1>
+        <h2 id="stats"></h2>
+      </div>
+
   </div>
 </body>
 </html>
